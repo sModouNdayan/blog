@@ -1,0 +1,16 @@
+
+{% extends 'layouts/default.html' %}
+
+{% block title %} BlogShow{% endblock title %}
+{% block body %}
+    <h1>My Blog</h1>
+
+    <article>
+        <h2>{{post.title}}</h2>
+
+        <p>{{post.content}}</p>
+    </article>
+
+<p><a href="{{url_for('posts_index')}}">  &#x1F448; All post</a></p>
+   
+{% endblock body %}
